@@ -1,18 +1,47 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="signup.css">
-    <h1>
-        믿음과 신뢰를 기반으로 한 공구 콘솔
-    </h1>
-    <H2>
-        회원가입
-    </H2>
-    <p>hello world</p>
-    <button>
-        공구해요
-    </button>
-    <div>
-        <input type="checkbox" id="scales" name="scales" checked>
-        <label for="scales">공구하시겠어요?</label>
-    </div>
-    <p style="color: blue">데드라인이 필요합니다.</p>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>공구콘솔 회원가입 페이지</title>
+    <h1>믿음과 신뢰를 기반으로 한 공구콘솔</h1>
+</head>
+<body>
+    <form action="action_page.php" style="border:1px solid #ccc">
+        <div class="container">
+          <h2>회원가입</h2>
+          <p>공구콘솔을 이용하려면 계정을 만들어주세요!</p>
+          <hr> 
+
+          <label for="username"><b>이름</b></label><br>
+          <input type="text" placeholder="이름" name="username" required><br>
+      
+          <label for="email"><b>이메일</b></label><br>
+          <input type="text" placeholder="이메일 주소" name="email" required><br>
+      
+          <label for="psw"><b>비밀번호</b></label><br>
+          <input type="password" placeholder="비밀번호" name="psw" required><br>
+      
+          <label for="psw-repeat"><b>비밀번호 확인</b></label><br>
+          <input type="password" placeholder="비밀번호 확인" name="psw-repeat" required><br>
+      
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> 아이디 기억하기
+          </label>
+      
+          <p>회원가입 시 <a href="#" style="color:dodgerblue">이용약관</a>에 동의한 것으로 간주됩니다.</p>
+      
+          <div class="clearfix">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    <script src="signup.js"></script>
+</body>
 </html>
