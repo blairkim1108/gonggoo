@@ -7,6 +7,7 @@
     <title>공구 등록하기</title>
 </head>
 <body>
+    <h1>공구 등록하기</h1><br>
     <!-- 공구 등록 폼-->
     <div class="form">
         <form action="">
@@ -26,10 +27,16 @@
             <div class="inputContainer">
             <input type="date" id="deadline" name="deadline" value="yyyy.mm.dd"><br>
             </div>
+            <div class="inputContainer">
+                <label for="groupsize">정원</label><br>
+                <input type="number" id="groupsize" name="groupsize" value="5"><br>
+                </div>
+                <h5>정원이 다 차거나 기한이 지나면 공구가 자동으로 마감됩니다.</h5><br>
             <div class="buttonContainer">
             <input type="submit" value="등록하기">
             </div>
         </form>
     </div>
+    <script src="list.css"></script>
 </body>
 </html>
